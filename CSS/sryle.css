@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+:root{
+    ---font:'Poppins', sans-serif;
+}
+
+.pp{
+    background-image: url(../images/bg.jpg) !important;
+    background-color: #00000077;
+    background-size:cover;
+    background-repeat: no-repeat;
+   background-blend-mode: color;
+
+ 
+}
+
+
+.navbar-brand img{
+    width: 150px;
+}
+.navbar_one{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.left{
+    color: #fff;
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.left i{
+    color: #FF771F;
+    font-size: 16px;
+    margin-right: 4px;
+}
+.left span {
+   font-size: 14px;
+}
+
+.right{
+   color: #fff;
+   display: flex;
+}
+.fac_tu_icon i{
+    color: #fff;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+
+.fac_tu_icon i:hover{
+    color:  #FF771F;
+    font-size: 15px;
+  
+}
+
+
+.lang{
+    position: relative;
+    padding: 0px 15px;  
+}
+
+.lang i{
+    font-size: 14px;
+}
+.lang span{
+ 
+}
+
+.lang::after{
+    content: "|";
+    position: absolute;
+    right: 0;    
+}
+.lang::before{
+    content: "|";
+    position: absolute;
+    left: 0;  
+}
+
+.login span{
+    margin-left: 10px;
+}
+
+.login span:hover{
+    text-decoration: underline;
+}
+
+
+.dropdown-menu{
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    transform: translate(10px, 35px) !important;
+    min-width: 6rem;
+    background-color: #00000000;
+    border: none!important;
+}
+
+.dropdown-item{
+  color: #fff;
+  position: relative;
+  background-color: #000;
+
+}
+.dropdown-menu li{
+    position: relative;
+     background-color: #000;  
+    margin-bottom: 2px;
+    text-align: center;
+    z-index: -2;
+   
+}
+
+.dropdown-item::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: #FF771F;
+    left: 0;
+    top: 0;
+    z-index: -1; 
+    transition: 1s;
+}
+.dropdown-item:hover::before{
+    width: 100%;
+    left: 0;
+}
+.dropdown-item:hover{
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff !important;
+}
+
+.navbar{
+    padding: 25px 0px;
+    border-bottom: 1px solid #fff;
+}
+
+.btn_header{
+    padding: 20px 20px;
+    background-color: #FF771F;
+    border: 2px solid #FF771F;
+    border-radius: 0;
+    color: #fff;
+    transition: 0.5s;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: var(---font);
+    margin-left: 20px;
+}
+.btn_header:hover{
+    background-color: #FFF;
+    border-radius: 0;
+    color:  #FF771F;
+    border: 2px solid #FF771F;
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: #787878;
+}
+.nav-link{
+    position: relative;
+    padding: 15px 10px;
+    font-size: 14px;
+    text-transform: inherit;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.nav-item{
+    position: relative;
+}
+
+.nav-item .dropdown-menu{
+    transform: translate(7px, 0px) !important;
+}
+
+
+
+
+.nav-item::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #25d06f;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.nav-item::before {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #25d06f;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.nav-item:hover::after {
+    width: 100%;
+}
+.nav-item:hover::before {
+    width: 100%;
+}
+.nav-link:hover {
+    color: #25d06f;
+}
+ 
+
+
+
+
+
+.banner_section{
+    margin: 100px 0px;
+}
+
+.banner_text{
+    color: #fff;
+}
+
+.banner_text h4{
+    font-family: "Source Serif Pro", serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-transform: capitalize;
+}
+.banner_text h1{
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1.4;
+    font-family: var(---font);
+}
+.banner_btn{
+  
+   padding: 18px 40px;
+    color: #fff;
+    text-align: center;
+    border: 2px solid #fff;
+    text-decoration: none;
+    border-radius: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    background-color: transparent;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    letter-spacing: 1px;
+    margin-top: 40px;
+}
+
+.banner_btn:hover{
+    background-color: #FF771F;
+    color: #fff;
+}
+
+.box{
+    color: #fff;
+    padding: 40px 60px 40px 60px;
+    position: relative;
+}
+
+.fast_box::after {
+    position: absolute;
+    content: "";
+    height: 25px;
+    width: 100%;
+    background-color: #0A3041;
+    top: 0;
+    left: 0;
+    -webkit-transition: top 0.5s;
+    transition: top 0.5s;
+}
+.fast_box:hover::after {
+    top: -25px;
+}
+.sec_box::after {
+    position: absolute;
+    content: "";
+    height: 25px;
+    width: 100%;
+    background-color:#0E3E53;
+    top: 0;
+    left: 0;
+    -webkit-transition: top 0.5s;
+    transition: top 0.5s;
+}
+.sec_box:hover::after {
+    top: -25px;
+}
+
+
+
+
+
+.box i{
+    font-size: 50px;
+}
+
+.box h3{
+    margin-top: 26px;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: var(---font);
+}
+
+
+
+@media(max-width:575px){
+
+
+    .navbar-toggler{
+        border: 1px solid #fff;
+    }
+    .navbar-toggler:focus {
+       
+         box-shadow: none;
+        
+    }
+    
+
+    .navbar_one{
+        display: block;
+        text-align: center;
+    }
+
+
+
+    .left{
+        display: inline-block;
+        text-align: center;
+    } 
+    .right {
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .banner_text h1 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 1.2;
+        font-family: var(---font);
+    }
+    .banner_text h4 {
+        font-family: "Source Serif Pro", serif;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        text-transform: capitalize;
+    }
+
+    .banner_section {
+        margin: 50px 0px;
+    }
+
+
+}
